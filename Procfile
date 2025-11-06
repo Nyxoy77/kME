@@ -1,1 +1,1 @@
-worker: python discord-music-bot.py
+worker: python bot.py
