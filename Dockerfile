@@ -1,13 +1,13 @@
 FROM python:3.11-slim
 
 # Install system libraries required for Discord Voice
-RUN apt-get update && apt-get install -y \
+RUN echo "force-rebuild" && apt-get update && apt-get install -y \
     ffmpeg \
     libopus-dev \
     libffi-dev \
     libsodium-dev \
     && rm -rf /var/lib/apt/lists/*
-
+    
 WORKDIR /app
 
 # Install dependencies
