@@ -1,0 +1,11 @@
+# Virtual environment
+bin/
+include/
+lib64/
+lib/
+share/
+pyvenv.cfg
+.env
+.venv
+env/
+venv/
